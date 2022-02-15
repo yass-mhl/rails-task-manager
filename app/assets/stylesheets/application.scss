@@ -1,0 +1,30 @@
+@import "bootstrap/scss/bootstrap";
+
+body {
+  background: #F5F5F5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  color: black;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.list-task {
+  color: black;
+  margin: 10px auto;
+}
+
+.btn-create {
+  padding: 5px;
+  border: 2px solid black;
+  background-color: beige;
+}

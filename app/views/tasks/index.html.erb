@@ -1,0 +1,12 @@
+<div class="container">
+  <h1 class="text-center">Tasks : </h1>
+  <span class="btn-create"><%= link_to 'Create a task', new_task_path %></span>
+  <ul class="list-task">
+    <% @tasks.each do |task| %>
+    <li class="f-checkbox"><%= link_to task.title, task_path(task)  %> <br> -> <%= link_to "Delete #{task.title}",
+              task_path(task),
+              method: :delete,
+              data: { confirm: "Are you sure?" } %></li>
+    <% end %>
+  </ul>
+</div>
